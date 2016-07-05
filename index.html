@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectable Box Options</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/app.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Jquery plugin "Selectable Box Options"</h1>
+        </div>
+        <p class="lead">
+            Plugin creates a hidden input with selected box value ' data-selectable-box-option-value' and name declarated w 'data-selectable-box-option-name'.
+        </p>
+
+        <form action="#" method="post">
+            <h3>Choice box option </h3>
+
+            <div class="row">
+                <div class="selectable-box-option" id="form-selectable-box" data-selectable-box-option-name="boxId">
+                    <div class="panel panel-default col-sm-3 sbi-option" data-selectable-box-option-value="1" data-selectable-box-option-selected>
+                        <div class="panel-body">
+                            <h3>Puppy 1</h3>
+                            <img src="assets/images/puppy1.jpg" style="width:200px;" class="img-rounded" />
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default col-sm-3 sbi-option" data-selectable-box-option-value="2">
+                        <div class="panel-body">
+                            <h3>Puppy 2</h1=3>
+                            <img src="assets/images/puppy2.jpg" style="width:200px;" class="img-rounded" />
+                        </div>
+                    </div>
+
+										<div class="panel panel-default col-sm-4 sbi-option" data-selectable-box-option-value="2">
+												<div class="panel-body">
+														<h3>IronMan</h3>
+														<img src="assets/images/iron.jpg" style="width:200px;" class="img-rounded" />
+												</div>
+										</div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer  class="footer">
+        <div class="container">
+            <p class="text-muted">Copyright (C) 2016 Michał Mazur <michmzr@gmail.com></p>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+        <script src="assets/js/selectableBoxOption.js"></script>
+        <script type="application/javascript">
+            (function ($) {
+                $("#form-selectable-box").selectableBoxOption();
+            })(jQuery);
+        </script>
+    </footer>
+</body>
+</html>
